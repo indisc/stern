@@ -1,0 +1,52 @@
+
+
+.stern-headline{
+	font-weight: bold;
+	font-size: 1.3em;
+	text-align: left;
+	line-height: 1.3em;
+	color: @grey-dark;
+	.matop(@10);
+	.pabot(@10);
+	word-wrap: break-word;
+	.pari(@10);
+	.paleft(@10);
+}
+
+	p.stern-txt{
+		font-weight: @thin;
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.3em;
+		word-break: normal;
+		white-space: normal;
+		color: @grey-dark;
+		.pari(@10);
+		.paleft(@10);
+	}
+
+p.txt-lineheight{
+	line-height: 1.6em;
+}
+
+
+@media(min-width: 360px){
+	.stern-headline{
+		font-size: 1.4em;
+	}
+	p.stern-txt{
+		font-size: 1.1em;
+		word-break: normal;
+	}
+}
+
+@media(min-width: 480px){
+	.stern-headline{
+		font-size: 1.6em;
+	}
+}
+
+.no-decoration{
+	text-decoration: none;
+}
+

@@ -1,0 +1,79 @@
+
+/* panel yellow */
+
+.panel-yellow{
+	background-color: @yellow-dark;
+	padding: @05 @05;
+}
+.panel-darkGrey{
+	background-color: @grey-dark;
+	padding: @05 @05;
+}
+
+@media(min-width: 320px){
+	.panel-darkGrey{
+		.matop(@20);
+	}
+}
+
+.panel-headline-darkgrey{
+	font-size: 1.2em;
+	color: @grey-dark;
+	font-weight: @med;
+	.letspace;
+}
+
+.panel-headline-darkgrey-left{
+	font-size: 1.2em;
+	color: @grey-dark;
+	font-weight: @med;
+	.letspace;
+	text-align:left;
+}
+
+.panel-txt-center{
+	text-align: center;
+}
+
+.panel-headline-yellow{
+	font-size: 1em;
+	color: @yellow-dark;
+	font-weight: @reg;
+	.letspace;
+
+	.paleft(@10)
+}
+
+.panel-headline-yellow > a{
+	color: @yellow-dark;
+}
+.panel-yellow-navigation{
+	min-height: 25px;
+}
+
+
+/*panel-body bootstrap*/
+.panel{
+	.matop(@05);
+	.mabot(@05);
+	border-left: 8px solid @yellow-dark;
+}
+.panel-body{
+	padding: 0.2em;
+	color: @grey-dark;
+	font-weight: @bold;
+	letter-spacing: 0.05em;
+}
+
+
+.panel-place-top{
+	.matop(@10);
+}
+
+
+/* panel yellow ipad*/
+@media( min-width: 768px){
+	.panel-yellow-bottom{
+	 	.mabot(@20);
+	}
+}

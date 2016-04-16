@@ -1,0 +1,25 @@
+{
+  "name": "stern-gewerbepark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-gzip": "^1.2.0",
+    "gulp-image": "^1.3.1",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7"
+  },
+  "description": ""
+}
