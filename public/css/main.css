@@ -551,15 +551,15 @@ p.stern-txt {
   padding-left: 1em;
 }
 .impressum-txt-allg .impressum-txt-detail {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .impressum-txt-allg .impressum-headline {
   font-size: 1.1em;
   color: #4A555D;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 .impressum-txt-allg .impressum-txt {
-  max-width: 80%;
+  max-width: 90%;
   font-weight: 300;
   text-align: left;
   font-size: 1em;
@@ -567,6 +567,42 @@ p.stern-txt {
   word-break: normal;
   white-space: normal;
   color: #4A555D;
-  padding-left: 1em;
+  padding-left: 0.5em;
   padding-top: 0.5em;
+}
+#topcontrol {
+  color: #fff;
+  z-index: 99;
+}
+#topcontrol:after {
+  top: -2px;
+  left: 8.5px;
+}
+#topcontrol:hover {
+  color: #FFCB00;
+  background: #4A555D;
+}
+#topcontrol {
+  color: #FFCB00;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background: #222;
+  position: relative;
+  right: 14px !important;
+  bottom: 11px !important;
+  border-radius: 3px !important;
+}
+#topcontrol:after {
+  top: -2px;
+  left: 8.5px;
+  content: "\f106";
+  position: absolute;
+  text-align: center;
+  font-family: FontAwesome;
+}
+.modal-content iframe {
+  margin: 0 auto;
+  display: block;
 }

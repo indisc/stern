@@ -165,15 +165,15 @@ footer a:hover{
 	.paleft(@10);
 	
 	.impressum-txt-detail{
-		.paleft(@20);
+		.paleft(@10);
 	}
 	.impressum-headline{
 		font-size: 1.1em;
 		color: @grey-dark;
-		.patop(@10);
+		.patop(@05);
 	}
 	.impressum-txt{
-		max-width: 80%;
+		max-width: 90%;
 		font-weight: @thin;
 		text-align: left;
 		font-size: @10;
@@ -181,10 +181,49 @@ footer a:hover{
 		word-break: normal;
 		white-space: normal;
 		color: @grey-dark;
-		.paleft(@10);
+		.paleft(@05);
 		.patop(@05);
 	}
 }
 
-@media(min-width: )
+
+#topcontrol {
+   color: #fff;
+   z-index: 99;
+  }
+  #topcontrol:after {
+  	top: -2px;
+  	left: 8.5px;
+  }
+  #topcontrol:hover{
+  	color: @yellow-dark;
+  	background: @grey-dark;
+  }
+
+#topcontrol {
+    color: @yellow-dark;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background: #222;
+    position: relative;
+    right: 14px !important;
+    bottom: 11px !important;
+    border-radius: 3px !important;
+}
+
+#topcontrol:after {
+    top: -2px;
+    left: 8.5px;
+    content: "\f106";
+    position: absolute;
+    text-align: center;
+    font-family: FontAwesome;
+}
+
+    .modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
 
