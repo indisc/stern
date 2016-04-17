@@ -128,10 +128,10 @@ footer a:hover{
 
 .web-design{
 	.stern-headline{
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.logo-fastlane{
-		max-width: 50%;
+		max-width: 40%;
 		.paleft(@10);
 	}
 	.web-link{
@@ -147,6 +147,60 @@ footer a:hover{
 		}
 	}
 }
+
+@media(min-width: 360px){
+	.web-design{
+		.stern-headline{
+			font-size: 1.1em;
+			}
+		.logo-fastlane{
+			max-width: 40%;
+			.paleft(@10);
+			}
+	}
+} //360
+
+@media(min-width: 480px){
+	.web-design{
+		.stern-headline{
+			font-size: 1.1em;
+			}
+		.logo-fastlane{
+			max-width: 35%;
+			.paleft(@10);
+			}
+	}
+} //480
+
+@media(min-width: 667px){
+	.web-design{
+		.stern-headline{
+			font-size: 1.1em;
+			}
+		.logo-fastlane{
+			max-width: 25%;
+			.paleft(@10);
+			}
+	}
+} //667
+
+@media(min-width: 992px){
+	.web-design{
+		.logo-fastlane{
+			max-width: 35%;
+			.paleft(@10);
+			}
+	}
+} //992
+
+@media(min-width: 1199px){
+	.web-design{
+		.logo-fastlane{
+			max-width: 30%;
+			.paleft(@10);
+			}
+	}
+} //1199
 
 	p.stern-txt{
 		font-weight: @thin;
