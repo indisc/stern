@@ -236,7 +236,7 @@ p.txt-lineheight {
 .mtop05 {
   margin-top: 0.5em;
 }
-.matop20 {
+.mtop20 {
   margin-top: 2em;
 }
 /* picture responsive verhalten */
@@ -448,9 +448,6 @@ p.txt-lineheight {
     position: absolute;
     right: 1em;
     top: 3em;
-  }
-  .nav .active a {
-    border-bottom: 4px solid #FFCB00;
   }
 }
 body {
