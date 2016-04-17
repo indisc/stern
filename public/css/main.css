@@ -243,6 +243,40 @@ p.txt-lineheight {
 .text-place-top {
   margin-top: 2em;
 }
+.txt-place-10 {
+  margin-top: 1em;
+}
+.stern-langhaus {
+  margin-top: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.stern-langhaus .col-sm-4 {
+  padding-left: 0;
+}
+.colorbox-yellow-light .panel-darkGrey {
+  margin-top: 1em;
+}
+.carousel-indicators .active {
+  width: 0;
+}
+.carousel-indicators li {
+  width: 0;
+  height: 0;
+  margin: 0;
+  cursor: none;
+  border: 0;
+  border-radius: 0;
+}
+.modal-content iframe {
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 320px) {
+  .modal-content iframe {
+    width: 100%;
+  }
+}
 /* navigation */
 .navbar-default {
   background-color: #FFCB00;
@@ -281,13 +315,6 @@ p.txt-lineheight {
 .navbar-default .navbar-nav > li > a {
   color: #4A555D;
 }
-.navbar-default .navbar-nav > li > a:hover {
-  -webkit-transition: 800ms;
-  transition: 800ms;
-  color: #4A555D;
-  font-size: 1.2em;
-  font-weight: 500;
-}
 .navbar-default .navbar-nav > .active > a {
   background-color: #FFCB00;
   color: #4A555D;
@@ -302,6 +329,7 @@ p.txt-lineheight {
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: #FFCB00;
+  border-bottom: 4px solid #FFCB00;
 }
 .navbar-nav {
   margin: 7.5px 5px;
@@ -389,27 +417,31 @@ p.txt-lineheight {
     background-color: transparent;
   }
 }
-.stern-langhaus {
-  margin-top: 2em;
-  padding-left: 15px;
-  padding-right: 15px;
+/* navigation */
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .nav > li > a {
+    padding: 10px 7px;
+  }
 }
-.stern-langhaus .col-sm-4 {
-  padding-left: 0;
-}
-.colorbox-yellow-light .panel-darkGrey {
-  margin-top: 1em;
-}
-.carousel-indicators .active {
-  width: 0;
-}
-.carousel-indicators li {
-  width: 0;
-  height: 0;
-  margin: 0;
-  cursor: none;
-  border: 0;
-  border-radius: 0;
+@media (min-width: 1025px) {
+  .navbar-default .navbar-nav > .active > a {
+    border-bottom: 6px solid #FFCB00;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
+    border-bottom: 6px solid #FFCB00;
+  }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    border-bottom: 4px solid #FFCB00;
+  }
+  .navbar-nav {
+    float: right !important;
+    position: absolute;
+    right: 1em;
+    top: 3em;
+  }
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -570,6 +602,7 @@ p.stern-txt {
   padding-left: 0.5em;
   padding-top: 0.5em;
 }
+/* back to top  */
 #topcontrol {
   color: #fff;
   z-index: 99;
@@ -602,7 +635,21 @@ p.stern-txt {
   text-align: center;
   font-family: FontAwesome;
 }
-.modal-content iframe {
-  margin: 0 auto;
-  display: block;
+/* lageplan picture */
+.placer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+@media (min-width: 320px) {
+  .placer {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+/* index stern-map*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .stern-map {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

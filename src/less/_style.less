@@ -187,6 +187,7 @@ footer a:hover{
 }
 
 
+/* back to top  */
 #topcontrol {
    color: #fff;
    z-index: 99;
@@ -222,8 +223,30 @@ footer a:hover{
     font-family: FontAwesome;
 }
 
-    .modal-content iframe{
-        margin: 0 auto;
-        display: block;
-    }
+
+/* lageplan picture */
+
+
+.placer{
+	.matop(@20);
+	.mabot(@20);
+}
+
+@media(min-width: 320px){
+	.placer{
+		.maleft(8%);
+		.mari(8%);
+	}
+}
+
+
+
+/* index stern-map*/
+@media(min-width: 768px)
+and(max-width: 1199px){
+	.stern-map{
+		.paleft(15px);
+		.pari(15px);
+	}
+}
 
