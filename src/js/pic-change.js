@@ -1,8 +1,8 @@
 
-/* hochhaus */
+// /* hochhaus */
 $(document).ready(function(){
-	$("#big-img-hochhaus img").click(function(){
-		var quelle 	= $(this).find(".pic-description").attr("src");
+	$("picture img").click(function(){
+		var quelle 	= $(this).find(".pic-description img").attr("src");
 		$("#big-hochhaus").attr({"src":quelle});
 
 	});
@@ -19,11 +19,3 @@ $(document).ready(function(){
 
 // 	});
 // });
-
-$(document).ready(function(){
-	$("figure, img").click(function(){
-		var quelle 	= $(this).find("section picture").attr("src");
-		$("figure #pic-hochhaus").attr({"src":quelle});
-	});
-
-});

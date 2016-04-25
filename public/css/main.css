@@ -57,6 +57,15 @@ footer.col-md-12 {
   padding-left: 0;
   padding-right: 0;
 }
+/* Dropdown*/
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+.nav .open > a {
+  background-color: transparent;
+}
 /* panel yellow */
 .panel-yellow {
   background-color: #FFCB00;
@@ -79,11 +88,6 @@ footer.col-md-12 {
 .panel-darkGrey {
   background-color: #4A555D;
   padding: 0.5em 0.5em;
-}
-@media (min-width: 320px) {
-  .panel-darkGrey {
-    margin-top: 2em;
-  }
 }
 .panel-headline-darkgrey {
   font-size: 1.2em;
@@ -257,6 +261,10 @@ p.txt-lineheight {
 }
 .stern-langhaus .col-sm-4 {
   padding-left: 0;
+}
+.stern-langhaus .col-xs-4 {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .colorbox-yellow-light .panel-darkGrey {
   margin-top: 1em;
@@ -681,6 +689,31 @@ p.stern-txt {
   text-align: center;
   font-family: FontAwesome;
 }
+/* dropdown */
+.dropdown-menu {
+  min-width: 200px;
+}
+.list-town {
+  padding-left: 2em;
+}
+.list-town li {
+  padding-bottom: 0.5em;
+}
+.list-town li a {
+  color: #4A555D;
+  letter-spacing: 0.03em;
+}
+.list-town li a:hover {
+  color: #FFCB00;
+}
+/* backlink objekt */
+.backlink-objekt {
+  color: #4A555D;
+}
+.backlink-objekt:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
 /* lageplan picture */
 .placer {
   margin-top: 2em;
@@ -698,4 +731,10 @@ p.stern-txt {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+.map-responsive {
+  min-width: 100%;
+  min-height: 35em;
+  padding-left: 15px;
+  padding-right: 15px;
 }

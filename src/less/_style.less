@@ -277,6 +277,36 @@ footer a:hover{
     font-family: FontAwesome;
 }
 
+/* dropdown */
+
+.dropdown-menu{
+	min-width: 200px;
+}
+
+.list-town{
+		padding-left: @20;
+		li{
+			.pabot(@05);
+			a{
+				color: @grey-dark;
+				.letspace;
+			}
+			a:hover{
+				color: @yellow-dark;
+			}
+		}
+}
+
+/* backlink objekt */
+
+.backlink-objekt{
+	color: @grey-dark;
+}
+
+.backlink-objekt:hover{
+	font-weight: @bold;
+	text-decoration: none;
+}
 
 /* lageplan picture */
 
@@ -304,3 +334,10 @@ and(max-width: 1199px){
 	}
 }
 
+
+.map-responsive{
+	min-width: 100%;
+	min-height: 35em;
+	.paleft(15px);
+	.pari(15px);
+}
