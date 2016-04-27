@@ -70,6 +70,7 @@ body{
 /* objekte */
 .objekte{
 	.matop(@20 * 2);
+	.mabot(@20);
 }
 
 /* map anfahrt und info.html*/
@@ -78,10 +79,16 @@ body{
   height: 480px;
 	min-width: 100%;
 	margin: 0px;
-	padding: 0px
+	padding: 0px;
+	margin-top: 2em;
  }
 
+ .maps{
+	.matop(@20);
+}
 
+
+/* video*/
 .video-center{
 	.flex;
 	.justicenter;
@@ -105,6 +112,11 @@ body{
 footer a:hover{
 	font-weight: @bold;
 }
+
+footer{
+	.matop(@20);
+}
+
 
 .kontakt-txt{
 	.paleft(@10);
@@ -148,10 +160,15 @@ footer a:hover{
 	}
 }
 
+.stern-headline{
+	.paleft(@05);
+}
+
 @media(min-width: 360px){
 	.web-design{
 		.stern-headline{
 			font-size: 1.1em;
+			padding-left: 0.5em;
 			}
 		.logo-fastlane{
 			max-width: 40%;
@@ -184,6 +201,7 @@ footer a:hover{
 	}
 } //667
 
+
 @media(min-width: 992px){
 	.web-design{
 		.logo-fastlane{
@@ -202,6 +220,9 @@ footer a:hover{
 	}
 } //1199
 
+
+
+
 	p.stern-txt{
 		font-weight: @thin;
 		text-align: left;
@@ -212,8 +233,21 @@ footer a:hover{
 		color: @grey-dark;
 		.pari(@10);
 		.paleft(@10);
+
+		a{
+			color: @grey-dark;
+			font-weight: @bold;
+		}
+		a:hover{
+			font-style: italic;
+			.letspace;
+			color: @grey-dark;
+		}
 	}
 
+.kontakt{
+	.mabot(@10);
+}
 
 .impressum-txt-allg{
 	.paleft(@10);
@@ -280,7 +314,7 @@ footer a:hover{
 /* dropdown */
 
 .dropdown-menu{
-	min-width: 200px;
+	min-width: 240px;
 }
 
 .list-town{
@@ -297,6 +331,17 @@ footer a:hover{
 		}
 }
 
+.dropdown-menu > li > a{
+	.paleft(@05);
+}
+
+.dropdown-menu >li{
+	.drop-stand{
+		border-left: 8px solid @yellow-dark;
+		background-color: @grey-lighter;
+	}
+}
+
 /* backlink objekt */
 
 .backlink-objekt{
@@ -308,6 +353,21 @@ footer a:hover{
 	text-decoration: none;
 }
 
+.objekt-link{
+	color: @grey-dark;
+	font-size: 1.4em;
+}
+.objekt-link:hover{
+	font-style: italic;
+	font-weight: @bold;
+	color: @grey-dark;
+	.letspace;
+	text-decoration: none;
+}
+
+.purchase{
+	.mabot(@20);
+}
 /* lageplan picture */
 
 
@@ -324,6 +384,25 @@ footer a:hover{
 }
 
 
+/* list objekte */
+
+.list-objekte{
+	.maleft(@20);
+	min-width: 94.1%;
+	background-color: @grey-dark;
+	padding: @10 0;
+	li{
+		a{
+			color: @yellow-dark;
+			padding: @10 @10;
+		}
+	}
+	.dropdown-menu{
+		background-color: @grey-dark;
+	}
+}
+
+
 
 /* index stern-map*/
 @media(min-width: 768px)
@@ -334,10 +413,51 @@ and(max-width: 1199px){
 	}
 }
 
+/* Startsite unsere objekte panel */
 
-.map-responsive{
-	min-width: 100%;
-	min-height: 35em;
-	.paleft(15px);
-	.pari(15px);
+@media(min-width: 768px){
+	.objekt-panel{
+		.col-xs-12,.col-sm-5{
+			.paleft(0);
+		}
+	}
 }
+
+@media(min-width: 1191px){
+	.objekte{
+		margin-top: 5em;
+		}
+}
+
+.maps{
+	.matop(@20);
+}
+
+
+
+/*  only css IE*/
+.ie10{
+		.web-design .logo-fastlane{
+		max-width: 40%;
+		height: 40%;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+and(min-width: 1199px){
+   /* IE10-specific styles go here */
+   .web-design{
+		.logo-fastlane{
+			max-width: 30%;
+			height: 30%;
+			.paleft(@10);
+			}
+	}
+}
+
+
+area{
+	display: blocK;
+	cursor: pinter;
+}
+

@@ -44,6 +44,15 @@ h6 {
     padding-left: 1px;
   }
 }
+@media (min-width: 768px) {
+  .objekt-panel {
+    padding-top: 2em;
+  }
+  .objekt-panel .col-xs-12,
+  .objekt-panel .col-sm-5 {
+    padding-left: 0;
+  }
+}
 footer.col-md-12 {
   padding-left: 0;
   padding-right: 0;
@@ -254,6 +263,9 @@ p.txt-lineheight {
 .txt-place-10 {
   margin-top: 1em;
 }
+.place-top-40 {
+  margin-top: 4em;
+}
 .stern-langhaus {
   margin-top: 2em;
   padding-left: 15px;
@@ -278,6 +290,228 @@ p.txt-lineheight {
   margin: 0;
   cursor: none;
   border: 0;
+  border-radius: 0;
+}
+@media (min-width: 768px) {
+  .map-responsive {
+    min-width: 100%;
+    min-height: 35em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  map {
+    position: relative;
+  }
+  .area-default {
+    position: absolute;
+    width: 22.5vw;
+    height: 13vw;
+  }
+  .area-rochlitz {
+    bottom: 38.5vw;
+    left: 42vw;
+  }
+  .area-medienhaus {
+    bottom: 13.5vw;
+    left: 49vw;
+  }
+  .area-limbach {
+    bottom: 10.5vw;
+    left: 6vw;
+  }
+}
+@media (min-width: 880px) {
+  .area-default {
+    width: 20.5vw;
+    height: 11vw;
+  }
+  .area-rochlitz {
+    bottom: 33.5vw;
+    left: 42vw;
+  }
+  .area-medienhaus {
+    bottom: 12vw;
+    left: 42vw;
+  }
+  .area-limbach {
+    bottom: 9.5vw;
+    left: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .area-default {
+    width: 22.5vw;
+    height: 12.5vw;
+  }
+  .area-rochlitz {
+    bottom: 38vw;
+    left: 40.5vw;
+  }
+  .area-medienhaus {
+    bottom: 13.5vw;
+    left: 47vw;
+  }
+  .area-limbach {
+    bottom: 10.5vw;
+    left: 5vw;
+  }
+}
+@media (min-width: 1110px) {
+  .area-default {
+    width: 21vw;
+    height: 11.5vw;
+  }
+  .area-rochlitz {
+    bottom: 35vw;
+    left: 37.5vw;
+  }
+  .area-medienhaus {
+    bottom: 12.5vw;
+    left: 43.5vw;
+  }
+  .area-limbach {
+    bottom: 10vw;
+    left: 4.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .area-default {
+    width: 24vw;
+    height: 13.5vw;
+  }
+  .area-rochlitz {
+    bottom: 40vw;
+    left: 43vw;
+  }
+  .area-medienhaus {
+    bottom: 14.5vw;
+    left: 50.5vw;
+  }
+  .area-limbach {
+    bottom: 11vw;
+    left: 5.5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .area-default {
+    width: 24vw;
+    height: 13.5vw;
+  }
+  .area-rochlitz {
+    bottom: 37vw;
+    left: 39.5vw;
+  }
+  .area-medienhaus {
+    bottom: 13vw;
+    left: 46vw;
+  }
+  .area-limbach {
+    bottom: 10vw;
+    left: 4vw;
+  }
+}
+@media (min-width: 1380px) {
+  .area-default {
+    width: 24vw;
+    height: 13.5vw;
+  }
+  .area-rochlitz {
+    bottom: 35vw;
+    left: 36.5vw;
+  }
+  .area-medienhaus {
+    bottom: 12vw;
+    left: 43vw;
+  }
+  .area-limbach {
+    bottom: 10vw;
+    left: 4vw;
+  }
+}
+.breadcrumb-arrow {
+  padding: 0;
+  list-style: none;
+}
+.breadcrumb-arrow li:first-child a {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.breadcrumb-arrow li,
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li span {
+  display: inline-block;
+  vertical-align: top;
+}
+.breadcrumb-arrow li:not(:first-child) {
+  margin-left: 0px;
+}
+.breadcrumb-arrow li + li:before {
+  padding: 0;
+  content: "";
+}
+.breadcrumb-arrow li span {
+  padding: 0 5px;
+}
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li:not(:first-child) span {
+  height: 16px;
+  padding: 0 10px 0 20px;
+  line-height: 36px;
+}
+.breadcrumb-arrow li:first-child a {
+  padding: 0 10px;
+}
+.breadcrumb-arrow li a {
+  position: relative;
+  color: #4A555D;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.two-layer .breadcrumb-arrow li:nth-child(1) a:before,
+.two-layer li:nth-child(2) a:before {
+  position: absolute;
+  top: 11px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  right: -10px;
+  z-index: 3;
+  border-left-color: #4A555D;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.breadcrumb-arrow li a:focus,
+.breadcrumb-arrow li a:hover {
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+}
+.breadcrumb-arrow li a:focus:before,
+.breadcrumb-arrow li a:hover:before {
+  border-left-color: transparent;
+}
+.breadcrumb-arrow li a:active {
+  background-color: transparent;
+  border: 0px;
+}
+.breadcrumb-arrow li a:active:after,
+.breadcrumb-arrow li a:active:before {
+  border-left-color: #4A555D;
+}
+.breadcrumb-arrow li span {
+  color: #4A555D;
+}
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 1em;
+  background-color: transparent;
   border-radius: 0;
 }
 .modal-content iframe {
@@ -514,6 +748,7 @@ body {
 /* objekte */
 .objekte {
   margin-top: 4em;
+  margin-bottom: 2em;
 }
 /* map anfahrt und info.html*/
 #map-canvas {
@@ -521,7 +756,12 @@ body {
   min-width: 100%;
   margin: 0px;
   padding: 0px;
+  margin-top: 2em;
 }
+.maps {
+  margin-top: 2em;
+}
+/* video*/
 .video-center {
   display: -webkit-box;
   display: -webkit-flex;
@@ -547,6 +787,9 @@ body {
 }
 footer a:hover {
   font-weight: 700;
+}
+footer {
+  margin-top: 2em;
 }
 .kontakt-txt {
   padding-left: 1em;
@@ -583,9 +826,13 @@ footer a:hover {
 .web-design .web-link a:hover {
   font-weight: 700italic;
 }
+.stern-headline {
+  padding-left: 0.5em;
+}
 @media (min-width: 360px) {
   .web-design .stern-headline {
     font-size: 1.1em;
+    padding-left: 0.5em;
   }
   .web-design .logo-fastlane {
     max-width: 40%;
@@ -632,6 +879,18 @@ p.stern-txt {
   color: #4A555D;
   padding-right: 1em;
   padding-left: 1em;
+}
+p.stern-txt a {
+  color: #4A555D;
+  font-weight: 700;
+}
+p.stern-txt a:hover {
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #4A555D;
+}
+.kontakt {
+  margin-bottom: 1em;
 }
 .impressum-txt-allg {
   padding-left: 1em;
@@ -691,7 +950,7 @@ p.stern-txt {
 }
 /* dropdown */
 .dropdown-menu {
-  min-width: 200px;
+  min-width: 240px;
 }
 .list-town {
   padding-left: 2em;
@@ -706,6 +965,13 @@ p.stern-txt {
 .list-town li a:hover {
   color: #FFCB00;
 }
+.dropdown-menu > li > a {
+  padding-left: 0.5em;
+}
+.dropdown-menu > li .drop-stand {
+  border-left: 8px solid #FFCB00;
+  background-color: #e7e7e7;
+}
 /* backlink objekt */
 .backlink-objekt {
   color: #4A555D;
@@ -713,6 +979,20 @@ p.stern-txt {
 .backlink-objekt:hover {
   font-weight: 700;
   text-decoration: none;
+}
+.objekt-link {
+  color: #4A555D;
+  font-size: 1.4em;
+}
+.objekt-link:hover {
+  font-style: italic;
+  font-weight: 700;
+  color: #4A555D;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.purchase {
+  margin-bottom: 2em;
 }
 /* lageplan picture */
 .placer {
@@ -725,6 +1005,20 @@ p.stern-txt {
     margin-right: 8%;
   }
 }
+/* list objekte */
+.list-objekte {
+  margin-left: 2em;
+  min-width: 94.1%;
+  background-color: #4A555D;
+  padding: 1em 0;
+}
+.list-objekte li a {
+  color: #FFCB00;
+  padding: 1em 1em;
+}
+.list-objekte .dropdown-menu {
+  background-color: #4A555D;
+}
 /* index stern-map*/
 @media (min-width: 768px) and (max-width: 1199px) {
   .stern-map {
@@ -732,9 +1026,35 @@ p.stern-txt {
     padding-right: 15px;
   }
 }
-.map-responsive {
-  min-width: 100%;
-  min-height: 35em;
-  padding-left: 15px;
-  padding-right: 15px;
+/* Startsite unsere objekte panel */
+@media (min-width: 768px) {
+  .objekt-panel .col-xs-12,
+  .objekt-panel .col-sm-5 {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1191px) {
+  .objekte {
+    margin-top: 5em;
+  }
+}
+.maps {
+  margin-top: 2em;
+}
+/*  only css IE*/
+.ie10 .web-design .logo-fastlane {
+  max-width: 40%;
+  height: 40%;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1199px) {
+  /* IE10-specific styles go here */
+  .web-design .logo-fastlane {
+    max-width: 30%;
+    height: 30%;
+    padding-left: 1em;
+  }
+}
+area {
+  display: blocK;
+  cursor: pinter;
 }

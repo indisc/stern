@@ -128,17 +128,72 @@
                             <li>
                                 <a href="index.html">Startseite</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="info.html">Stern Gewerbepark</a>
                             </li>
-                            <li class="active">
-                                <a href="objekt.html"> Unsere Objekte</a>
-                            </li>
-                            <li>
-                                <a href="anfahrt.html"> Anfahrt</a>
-                            </li>
-                            <li>
-                                <a href="lageplan.html">Lageplan</a>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="objekt.html">Unsere Objekte
+                                <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-head drop-stand" href="#">
+                                            Rochlitz
+                                        </a>
+
+                                        <ul class="list-unstyled list-town rochlitz">
+                                            <li>
+                                                <a href="objekt_hochhaus_rochlitz.html">
+                                                    Hochhaus
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="objekt_lagerhalle_rochlitz.html">
+                                                    Lagerhalle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="objekt_verwaltung_rochlitz.html">
+                                                    Bürogebäude
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="objekt_langhaus_rochlitz.html">
+                                                    Produktionshalle
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-head drop-stand" href="#">
+                                            Limbach
+                                        </a>
+                                        <ul class="list-unstyled list-town limbach">
+                                            <li>
+                                                <a href="objekt_limbach_johannisplatz.html">
+                                                    Johannisplatz
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="objekt_limbach_albert-einstein.html">
+                                                    Albert-Einstein-Straße
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-third drop-stand" href="#">
+                                            Chemnitz
+                                        </a>
+                                        <ul class="list-unstyled list-town chemnitz">
+                                            <li>
+                                                <a href="objekt_medienhaus_chemnitz.html">
+                                                    Medienhaus Chemnitz
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="kontakt.html">Kontakt</a>
@@ -155,6 +210,13 @@
     </header>
     <div class="colorbox row">
         <div class=" col-md-12 visible-lg-* hidden-xs hidden-sm hidden-md panel-yellow-navigation panel-yellow"></div>
+        <div class="two-layer">
+            <ol class="breadcrumb breadcrumb-arrow">
+                <li><a href="objekt.html">Objekte</a></li>
+                <li><a href="objekt.html">Chemnitz</a></li>
+                <li><a href="objekt_medienhaus_chemnitz.html">Medienhaus Chemnitz</a></li>
+            </ol>
+        </div>
     </div>
     <article class="stern-langhaus colorbox-yellow-light row">
         <section class="col-sm-12 col-md-4 place-top">
@@ -183,7 +245,18 @@
             </div>
             </div>
         </div> <!-- colorbox-yellow-light -->
-    </article>
+        <section class="col-sm-12 col-md-4">
+                <h2 class="panel-darkGrey panel-headline-yellow panel-txt-center ">
+                    Video zum Objekte Limbach-Oberfrohna
+                </h2>
+        </section>
+
+        <div class="col-sm-12">
+            <div class="video-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ffMvEIXBqEk" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        </article>
     <div class="row">
         <article class="carousell">
             <div id="carousel-id" class="carousel slide" data-ride="carousel">
@@ -238,21 +311,14 @@
             </div>
         </article><!--carousell-->
     </div>
-    <div class="row">
-        <section class="col-sm-12 col-md-4">
-                <h2 class="panel-darkGrey panel-headline-yellow panel-txt-center ">
-                    Video zum Objekte Limbach-Oberfrohna
-                </h2>
-        </section>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <div class="video-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ffMvEIXBqEk" frameborder="0" allowfullscreen=""></iframe>
+            <div class="col-sm-12">
+                <div class="maps">
+                    <iframe class="map-responsive"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.6605671585094!2d12.925364516035657!3d50.83745087953068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a7465fdde25cc5%3A0x6896581e6c38b6ef!2sCarolastra%C3%9Fe+4%2C+09111+Chemnitz!5e0!3m2!1sde!2sde!4v1461744463661" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     <footer class="row">
         <article class="col-md-12 panel-yellow">
             <p class="footer-txt col-sm-8">
