@@ -44,15 +44,6 @@ h6 {
     padding-left: 1px;
   }
 }
-@media (min-width: 768px) {
-  .objekt-panel {
-    padding-top: 2em;
-  }
-  .objekt-panel .col-xs-12,
-  .objekt-panel .col-sm-5 {
-    padding-left: 0;
-  }
-}
 footer.col-md-12 {
   padding-left: 0;
   padding-right: 0;
@@ -133,6 +124,39 @@ footer.col-md-12 {
 @media (min-width: 768px) {
   .panel-yellow-top {
     margin-top: 2em;
+  }
+}
+/* pannel startsite */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .objekt-panel .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .objekt-panel .panel-headline-darkgrey {
+    font-size: 1em;
+  }
+  /* kontakt */
+  .stern-info p.stern-txt {
+    padding-left: 0.5em;
+  }
+  .stern-info .kontakt-txt {
+    padding-left: 0.5em;
+  }
+  .stern-info .kontakt {
+    padding-left: 0.5em;
+  }
+  /*impressum*/
+  .stern-impressum .stern-txt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .address-txt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .kontakt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .impressum-txt-allg {
+    padding-left: 0;
   }
 }
 .stern-headline {
@@ -266,6 +290,9 @@ p.txt-lineheight {
 .place-top-40 {
   margin-top: 4em;
 }
+.text-place {
+  padding-top: 2em;
+}
 .stern-langhaus {
   margin-top: 2em;
   padding-left: 15px;
@@ -291,6 +318,18 @@ p.txt-lineheight {
   cursor: none;
   border: 0;
   border-radius: 0;
+}
+.stern-all {
+  margin-top: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.stern-all .col-sm-4 {
+  padding-left: 0;
+}
+.stern-all .col-xs-4 {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 @media (min-width: 768px) {
   .map-responsive {
@@ -590,6 +629,25 @@ p.txt-lineheight {
 .navbar-default {
   border-color: transparent;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
+    padding-left: 0.5em;
+    padding: 5px 5px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu li a {
+    padding: 5px 5px 5px 25px;
+  }
+}
+@-moz-document url-prefix() {
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-nav .open .dropdown-menu .dropdown-header,
+    .navbar-nav .open .dropdown-menu > li > a {
+      padding-left: 0.5em;
+      padding: 5px 0 5px 25px;
+    }
+  }
+}
 @media (min-width: 320px) and (max-width: 1024px) {
   .navbar-header {
     float: none;
@@ -696,11 +754,23 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+nav {
+  z-index: 1;
+}
 .header-logo {
   padding-left: 2em;
   padding-top: 2em;
   margin-bottom: 2em;
-  z-index: 9999;
+  z-index: 1;
+}
+.header-logo a .logo-link {
+  cursor: pointer;
+  height: 40px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .header-logo {
+    padding-left: 0.5em;
+  }
 }
 .yellow-balken {
   min-width: 100%;
@@ -889,6 +959,11 @@ p.stern-txt a:hover {
   letter-spacing: 0.03em;
   color: #4A555D;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  p.stern-txt {
+    padding-left: 0.8em;
+  }
+}
 .kontakt {
   margin-bottom: 1em;
 }
@@ -1057,4 +1132,77 @@ p.stern-txt a:hover {
 area {
   display: blocK;
   cursor: pinter;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* Startsite */
+  .objekt-panel .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .objekt-panel .panel-headline-darkgrey {
+    font-size: 1em;
+  }
+  /* objekt hochhaus */
+  /* kontakt */
+  .stern-info p.stern-txt {
+    padding-left: 0.5em;
+  }
+  .stern-info .kontakt-txt {
+    padding-left: 0.5em;
+  }
+  .stern-info .kontakt {
+    padding-left: 0.5em;
+  }
+  /*impressum*/
+  .stern-impressum .stern-txt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .address-txt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .kontakt {
+    padding-left: 0.5em;
+  }
+  .stern-impressum .impressum-txt-allg {
+    padding-left: 0;
+  }
+  .text-place {
+    padding-top: 0.5em;
+  }
+  .place-left {
+    padding-left: 0.5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .limbach-johannis .col-md-6 {
+    padding-left: 0;
+  }
+  .hochhaus p.stern-txt {
+    padding-left: 0;
+  }
+  /* outer place left right map startsite*/
+  .stern-map {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* ipad logo left */
+  .header-logo {
+    padding-left: 0;
+  }
+  .stern-impressum .panel-darkGrey:nth-child(1) {
+    margin-left: 1em;
+  }
+  .stern-info .panel-darkGrey {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .text-place {
+    padding-top: 4em;
+  }
+}
+@media (min-width: 992px) {
+  .text-place {
+    padding-top: 0.5em;
+  }
 }

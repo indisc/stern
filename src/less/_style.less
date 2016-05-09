@@ -4,13 +4,28 @@ body{
 	font-size: 14px;
 }
 
+nav{
+	z-index: 1;
+}
 
 .header-logo{
 	.paleft(@20);
 	.patop(@20);
 	.mabot(@20);
-	z-index: 9999;
-
+	z-index: 1;
+	a{
+		.logo-link{
+		cursor: pointer;
+		height: 40px;
+		}
+	}
+}
+@media only screen
+and(min-width: 320px)
+and(max-width: 768px){
+	.header-logo{
+		.paleft(@05);
+	}
 }
 
 .yellow-balken{
@@ -223,27 +238,35 @@ footer{
 
 
 
-	p.stern-txt{
-		font-weight: @thin;
-		text-align: left;
-		font-size: 1em;
-		line-height: 1.3em;
-		word-break: normal;
-		white-space: normal;
-		color: @grey-dark;
-		.pari(@10);
-		.paleft(@10);
+p.stern-txt{
+	font-weight: @thin;
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.3em;
+	word-break: normal;
+	white-space: normal;
+	color: @grey-dark;
+	.pari(@10);
+	.paleft(@10);
 
-		a{
-			color: @grey-dark;
-			font-weight: @bold;
-		}
-		a:hover{
-			font-style: italic;
-			.letspace;
-			color: @grey-dark;
-		}
+	a{
+		color: @grey-dark;
+		font-weight: @bold;
 	}
+	a:hover{
+		font-style: italic;
+		.letspace;
+		color: @grey-dark;
+	}
+} //stern-txt
+
+@media only screen
+and(min-width: 320px)
+and(max-width: 768px){
+	p.stern-txt{
+		.paleft(0.8em;)
+	}
+} 
 
 .kontakt{
 	.mabot(@10);
