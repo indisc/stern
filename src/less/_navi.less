@@ -122,7 +122,7 @@ and(max-width: 768px){
 
 ////////////////////////////////////////////
 @media (min-width: 320px)
-and(max-width: 1024px) {
+and(max-width: 991px) {
  .navbar-header {
     float: none;
  }
@@ -201,8 +201,13 @@ and(max-width: 1980px){
 
 }
 
-
-
+@media(min-width: 992px)
+and(max-width: 1024px){
+    .nav > li > a{
+        padding: 10px 10px;
+        .patop(3em);
+    }
+}
 /* navigation */
 @media(min-width: 1025px)
 and(max-width: 1199px){
